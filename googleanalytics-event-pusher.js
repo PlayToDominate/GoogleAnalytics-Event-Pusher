@@ -36,5 +36,5 @@ $(document).on('click', 'a', function() {
 	if (typeof console != "undefined") {
 		console.log('1st GA Value: '+gaepSection+'\n2nd GA Value: '+gaepLabel+'\n3rd GA Value: '+gaepDestination);
 	}
-	//vp_ga_tracking(section,screenid_name,screenid);
+	//gaep_tracking(gaepSection,gaepLabel,gaepDestination);
 });
