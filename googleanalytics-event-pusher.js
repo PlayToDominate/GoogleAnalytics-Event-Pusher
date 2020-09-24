@@ -15,25 +15,13 @@ $(document).on('click', 'a', function() {
   var gaepLabel = $(this).data('gaepLabel');
   var gaepDestination = $(this).data('gaepDestination');
   if (typeof gaepSection === "undefined") {
-    if(
-      (sectionContainer.hasClass('header')) ||
-      (sectionContainer.attr('id') == 'header') ||
-      (sectionContainer.is('header')==true)
-    ){
+    if((sectionContainer.hasClass('header')) || (sectionContainer.attr('id') == 'header') || (sectionContainer.is('header')==true)){
       gaepSection = defaultSectionHeader
     }
-    if(
-      (sectionContainer.hasClass('main')) ||
-      (sectionContainer.attr('id') == 'main') ||
-      (sectionContainer.is('main'))
-    ){
+    if((sectionContainer.hasClass('main')) || (sectionContainer.attr('id') == 'main') || (sectionContainer.is('main'))){
       gaepSection = defaultSectionMain;
     }
-    if(
-      (sectionContainer.hasClass('footer')) ||
-      (sectionContainer.attr('id') == 'footer') ||
-      (sectionContainer.is('footer') == true)
-    ){
+    if((sectionContainer.hasClass('footer')) || (sectionContainer.attr('id') == 'footer') || (sectionContainer.is('footer') == true)){
       gaepSection = defaultSectionFooter;
     }
   }
