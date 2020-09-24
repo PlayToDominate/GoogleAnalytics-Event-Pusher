@@ -1,17 +1,52 @@
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="googleanalytics-event-pusher.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+    }
+
+    a {
+      font: inherit;
+      background: #ff2058;
+      padding: 0.5rem 2rem;
+      color: white;
+      border: 1px solid #ff2058;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    a:hover,
+    a:active {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+    }
+
+    a:focus {
+      outline: none;
+    }
+    header,main,footer{
+      padding: 1em;
+    }
+</style>
 </head>
 <body>
-<header class="sectionContainer">
-  <a href="#">Header Link</a>
+<header class="sectionContainer" data-gaep-section="Heading">
+  <p><a href="#" data-gaep-destination="About Us" data-gaep-label="Main link">Header Link</a></p>
 </header>
 <main class="sectionContainer">
-  <a href="#">Main Link</a>
+  <p><a href="#">Main Link</a></p>
 </main>
 <footer class="sectionContainer">
-  <a href="#">Footer Link</a>
+  <p><a href="#">Footer Link</a></p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="googleanalytics-event-pusher.js"></script>
 </body>
 </html>
